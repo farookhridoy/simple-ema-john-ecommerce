@@ -8,8 +8,13 @@ const ProductDetails = () => {
   console.log(product);
   return (
     <div>
-      <h1> {key} This is Proudct Details page</h1>
-      <Product product={product} key={product.key}></Product>
+      <h1>This is Proudct Details page</h1>
+      <hr />
+      <Product
+        showAddToCart={false}
+        product={product}
+        key={product.key}
+      ></Product>
     </div>
   );
 };
